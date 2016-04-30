@@ -1,14 +1,16 @@
 {
   "name": "zhenghe-starwars-name",
-  "version": "1.4.0-beta.0",
+  "version": "0.0.0-semantically-released",
   "description": "Get random Star wars names",
   "main": "src/index.js",
   "scripts": {
-    "test": "mocha src/index.test.js -w"
+    "commit": "git-cz",
+    "test": "mocha src/index.test.js -w",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ZhengHe-MD/starwars-name.git"
+    "url": "https://github.com/ZhengHe-MD/zhenghe-starwars-name.git"
   },
   "keywords": [
     "random",
@@ -18,14 +20,18 @@
   "author": "Zheng He <zhenghe@madadata.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ZhengHe-MD/starwars-name/issues"
+    "url": "https://github.com/ZhengHe-MD/zhenghe-starwars-name/issues"
   },
-  "homepage": "https://github.com/ZhengHe-MD/starwars-name#readme",
+  "homepage": "https://github.com/ZhengHe-MD/zhenghe-starwars-name#readme",
   "dependencies": {
     "unique-random-array": "1.0.0"
   },
   "devDependencies": {
     "chai": "3.5.0",
-    "mocha": "2.4.5"
+    "mocha": "2.4.5",
+    "semantic-release": "^4.3.5"
+  },
+  "czConfig": {
+    "path": "node_modules/cz"
   }
 }
