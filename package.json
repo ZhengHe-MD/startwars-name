@@ -29,12 +29,16 @@
   },
   "devDependencies": {
     "chai": "3.5.0",
+    "ghooks": "1.2.1",
     "mocha": "2.4.5",
     "semantic-release": "^4.3.5"
   },
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"
+    },
+    "ghooks": {
+      "pre-commit": "npm run test:single"
     }
   }
 }
